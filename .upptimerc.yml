@@ -1,31 +1,53 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Настройки Upptime для внешней страницы статуса status.ogurexxx.ru (см. docs/status/README.md).
+# Этот файл копируется целиком в репозиторий werx1212/status под именем .upptimerc.yml.
+# Проверяется только главная: адреса панели управления на публичной странице быть не должно.
+owner: werx1212
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: ogurexxx.ru
+    url: https://ogurexxx.ru
+    expectedStatusCodes:
+      - 200
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.ogurexxx.ru
+  name: ogurexxx.ru — статус
+  introTitle: "Работает ли ogurexxx.ru"
+  introMessage: "Эта страница живёт отдельно от сайта и проверяет его снаружи каждые 5 минут, поэтому открывается, даже когда сам сайт недоступен. Разборы сбоев — на [ogurexxx.ru/incidents](https://ogurexxx.ru/incidents)."
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Сайт
+      href: https://ogurexxx.ru
+    - title: Разборы сбоев
+      href: https://ogurexxx.ru/incidents
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  activeIncidents: Текущие сбои
+  allSystemsOperational: Всё работает
+  incidentReport: "Сбой #$NUMBER →"
+  activeIncidentSummary: "Открыт $DATE, сообщений: $POSTS"
+  incidentTitle: "Сбой $NUMBER: подробности"
+  incidentDetails: Подробности
+  incidentFixed: Исправлено
+  incidentOngoing: Продолжается
+  incidentOpenedAt: Начало
+  incidentClosedAt: Конец
+  incidentViewOnGitHub: Открыть на GitHub
+  incidentCommentSummary: "$AUTHOR, $DATE"
+  incidentBack: "← Ко всем сбоям"
+  pastIncidents: Прошлые сбои
+  pastIncidentsResolved: "Закрыт за $MINUTES мин, сообщений: $POSTS"
+  liveStatus: Сейчас
+  overallUptime: "Доступность: $UPTIME"
+  overallUptimeTitle: Доступность
+  averageResponseTime: "Средний ответ: $TIMEms"
+  averageResponseTimeTitle: Время ответа
+  sevelDayResponseTime: Время ответа за 7 дней
+  responseTimeMs: Время ответа (мс)
+  up: Работает
+  down: Недоступен
+  degraded: Медленно
+  ms: мс
+  loading: Загрузка
+  navGitHub: GitHub
+  footer: "Страница статуса — [Upptime](https://upptime.js.org)"
