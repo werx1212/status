@@ -5,16 +5,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/ogurexxx.ru.ico",
     "slug": "ogurexxx-ru",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "84.87%",
+    "uptimeDay": "71.11%",
+    "uptimeWeek": "84.87%",
+    "uptimeMonth": "84.87%",
+    "uptimeYear": "84.87%",
     "time": 975,
-    "timeDay": 777,
+    "timeDay": 0,
     "timeWeek": 975,
     "timeMonth": 975,
     "timeYear": 975,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-09": 350,
+      "2026-11-08": 66
+    }
   }
 ]
